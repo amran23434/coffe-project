@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="so">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee-Shop</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>coffe _ shop</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li></li> <a href="regester.html">Register</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section class="register" id="register">
+        <div class="container">
+            <h2 class="section-title">Register Now</h2>
+            <p class="section-subtitle">Diiwaan gali si aad u buuxiso Xogta COffe-shop</p>
+
+            <form class="register-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Magacaaga:</label>
+                        <input type="text" id="name" name="name" placeholder="Geli magacaaga" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Lambarka Taleefanka:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Geli lambarkaaga" required>
+                    </div>
+                </div>
+
+                
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Geli password-kaaga" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+
+            <div class="user-display">
+                <h3><i class="fas fa-user"></i> Xogta Diiwaan Gashay</h3>
+
+                <div class="display-item">
+                    <label>Magaca:</label>
+                    <span id="disp-name">---</span>
+                </div>
+
+                <div class="display-item">
+                    <label>Taleefanka:</label>
+                    <span id="disp-phone">---</span>
+                </div>
+
+                
+
+                <div class="display-item">
+                    <label>Password:</label>
+                    <span id="disp-pass">---</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Coffe-sho. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
